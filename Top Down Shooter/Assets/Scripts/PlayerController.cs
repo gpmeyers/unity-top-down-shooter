@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Collections.Specialized;
 using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour
+public class PlayerController : MonoBehaviour
 {
     public float movementSpeed;
     private Rigidbody myRigidbody;
@@ -15,6 +15,8 @@ public class PlayerMovement : MonoBehaviour
     // Reference to camera for player look controls
     private Camera mainCamera;
 
+    public GunController gun;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -25,7 +27,7 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // For player movement
+        // For player movement controls
         moveInput = new Vector3(Input.GetAxisRaw("Horizontal"), 0f, Input.GetAxisRaw("Vertical"));
         moveVelocity = moveInput * movementSpeed;
 
@@ -39,6 +41,17 @@ public class PlayerMovement : MonoBehaviour
             Vector3 pointToLook = cameraRay.GetPoint(rayLength);
 
             transform.LookAt(new Vector3(pointToLook.x, transform.position.y, pointToLook.z));
+        }
+
+        // For player combat controls
+        if (Input.GetMouseButtonDown(0))
+        {
+            gun.isFiring = true;
+        }
+
+        if (Input.GetMouseButtonUp(0))
+        {
+            gun.isFiring = false;
         }
     }
 
