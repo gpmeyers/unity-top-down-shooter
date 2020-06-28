@@ -16,10 +16,15 @@ public class PlayerHealthManager : MonoBehaviour
     private Renderer rend;
     private Color storedColor;
 
+    // Reference to Health Bar for UI support
+    public HealthBar healthBar;
+
     // Start is called before the first frame update
     void Start()
     {
         currentHealth = health;
+        healthBar.SetMaxHealth(health);
+
         rend = GetComponent<Renderer>();
         storedColor = rend.material.GetColor("_Color");
     }
@@ -49,6 +54,7 @@ public class PlayerHealthManager : MonoBehaviour
     public void DamagePlayer(int damage)
     {
         currentHealth -= damage;
+        healthBar.SetHealth(currentHealth);
 
         // Logic to have the player flash white when damaged
         flashCounter = flashLength;
