@@ -32,5 +32,9 @@ public class BulletController : MonoBehaviour
             collision.gameObject.GetComponent<EnemyHealthManager>().DamageEnemy(bulletDamage);
             Destroy(gameObject);
         }
+        if(collision.gameObject.tag == "Obstacle")
+        {
+            Destroy(gameObject);
+        }
     }
 }
