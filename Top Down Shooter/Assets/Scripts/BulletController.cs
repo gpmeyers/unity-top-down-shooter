@@ -32,7 +32,7 @@ public class BulletController : MonoBehaviour
             collision.gameObject.GetComponent<EnemyHealthManager>().DamageEnemy(bulletDamage);
             Destroy(gameObject);
         }
-        if(collision.gameObject.tag == "Obstacle")
+        if(collision.gameObject.tag == "Wall")
         {
             Destroy(gameObject);
         }
