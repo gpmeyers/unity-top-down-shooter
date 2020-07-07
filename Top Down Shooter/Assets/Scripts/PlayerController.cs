@@ -51,10 +51,16 @@ public class PlayerController : MonoBehaviour
         {
             gun.isFiring = true;
         }
-
         if (Input.GetMouseButtonUp(0))
         {
             gun.isFiring = false;
+        }
+
+        // For TransLoc
+        if(Input.GetMouseButtonDown(1) && !gun.transLocFired)
+        {
+            gun.transLocFired = true;
+            gun.FireTranslocator();
         }
     }
 

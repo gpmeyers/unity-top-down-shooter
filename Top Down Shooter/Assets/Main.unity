@@ -2715,6 +2715,10 @@ MonoBehaviour:
   bulletSpeed: 10
   fireRate: 0.1
   firePoint: {fileID: 1011140591}
+  transLocFired: 0
+  transLoc: {fileID: 4691353798596110337, guid: 6c671a9bd232e774caf9c6a7cb87027e,
+    type: 3}
+  transLocSpeed: 6.5
 --- !u!1 &1803618764
 GameObject:
   m_ObjectHideFlags: 0
