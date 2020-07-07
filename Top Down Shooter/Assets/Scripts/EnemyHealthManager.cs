@@ -8,9 +8,14 @@ public class EnemyHealthManager : MonoBehaviour
     public int health;
     private int currentHealth;
 
+    // Reference to Game Manager
+    private EnemySpawner manager;
+
     // Start is called before the first frame update
     void Start()
     {
+        manager = FindObjectOfType<EnemySpawner>();
+
         currentHealth = health;
     }
 
@@ -21,6 +26,7 @@ public class EnemyHealthManager : MonoBehaviour
         if(currentHealth <= 0)
         {
             Destroy(gameObject);
+            manager.EnemySpawn();
         }
     }
 
