@@ -28,6 +28,7 @@ public class EnemyController : MonoBehaviour
         transform.LookAt(player.transform.position);
     }
 
+    // Fixed update used for physics object physics/movement
     void FixedUpdate()
     {
         rb.velocity = transform.forward * moveSpeed;

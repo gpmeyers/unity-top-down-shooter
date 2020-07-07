@@ -5,7 +5,10 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    // Field containing Player Movement Speed 
     public float movementSpeed;
+
+    // Field containing a reference to the player Rigidbody
     private Rigidbody myRigidbody;
 
     // Input Data for player movement
