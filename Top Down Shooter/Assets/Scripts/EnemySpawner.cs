@@ -31,11 +31,11 @@ public class EnemySpawner : MonoBehaviour
     // Corountine that spawns X enemies at the beginning of the game
     IEnumerator EnemySpawnX()
     {
-        while(enemyCount < 10) // Value given in statement is "X"
+        while(enemyCount < 15) // Value given in statement is "X"
         {
             // Get a Random position for the enemy to be spawned (x,z) (y is fixed to 1)
-            xPos = UnityEngine.Random.Range(1, 23);
-            zPos = UnityEngine.Random.Range(1, 23);
+            xPos = UnityEngine.Random.Range(-23, 23);
+            zPos = UnityEngine.Random.Range(-23, 23);
 
             // Get the current position of the player and the random position generated for the enemy
             Vector3 playerPos = player.transform.position;
@@ -63,8 +63,8 @@ public class EnemySpawner : MonoBehaviour
     public void EnemySpawn()
     {
         // Get a Random position for the enemy to be spawned (x,z) (y is fixed to 1)
-        xPos = UnityEngine.Random.Range(1, 23);
-        zPos = UnityEngine.Random.Range(1, 23);
+        xPos = UnityEngine.Random.Range(-23, 23);
+        zPos = UnityEngine.Random.Range(-23, 23);
 
         // Get the current position of the player and the random position generated for the enemy
         Vector3 playerPos = player.transform.position;
