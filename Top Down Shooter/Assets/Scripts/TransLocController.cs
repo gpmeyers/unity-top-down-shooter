@@ -37,5 +37,10 @@ public class TransLocController : MonoBehaviour
             gun.transLocFired = false;
             Destroy(gameObject);
         }
+        if (collision.gameObject.tag == "Enemy")
+        {
+            gun.transLocFired = false;
+            Destroy(gameObject);
+        }
     }
 }
