@@ -1,0 +1,221 @@
+fileFormatVersion: 2
+guid: 11378e0605aebb445b6c461608986497
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8705092024909475102
+    second: Shift-Key_0
+  - first:
+      213: 8132115210435597461
+    second: Shift-Key_0
+  - first:
+      213: -7932604603790155586
+    second: Shift-Key_1
+  - first:
+      213: 1996150065938512021
+    second: Shift-Key_2
+  - first:
+      213: -2373172581919378974
+    second: Shift-Key_3
+  - first:
+      213: 1143272746338560530
+    second: Shift-Key_4
+  - first:
+      213: 2971169771283413215
+    second: Shift-Key_5
+  - first:
+      213: 9089824294324185955
+    second: Shift-Key_6
+  - first:
+      213: 5563712450364721346
+    second: Shift-Key_7
+  - first:
+      213: 5535457459742514546
+    second: Shift-Key_8
+  - first:
+      213: -782689573204663130
+    second: Shift-Key_9
+  - first:
+      213: -6925284394338481783
+    second: Shift-Key_10
+  - first:
+      213: -3352042587614083062
+    second: Shift-Key_11
+  - first:
+      213: -7333083882710873199
+    second: Shift-Key_12
+  - first:
+      213: -1322680020275090743
+    second: Shift-Key_13
+  - first:
+      213: -5898023934537559107
+    second: Shift-Key_14
+  - first:
+      213: -5691919087509274827
+    second: Shift-Key_15
+  - first:
+      213: -2025326926313068597
+    second: Shift-Key_16
+  - first:
+      213: 3889489422719543122
+    second: Shift-Key_17
+  - first:
+      213: 4754469397123495167
+    second: Shift-Key_18
+  - first:
+      213: -8112147937456686138
+    second: Shift-Key_19
+  - first:
+      213: 6013122532334479785
+    second: Shift-Key_20
+  - first:
+      213: -5675849416769445439
+    second: Shift-Key_21
+  - first:
+      213: -8541100490949085197
+    second: Shift-Key_22
+  - first:
+      213: -4109537537675788042
+    second: Shift-Key_1
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Shift-Key_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 48
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5949096b2b31bd070800000000000000
+      internalID: 8132115210435597461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shift-Key_1
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 48
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f083bbf16df7f6c0800000000000000
+      internalID: -4109537537675788042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
