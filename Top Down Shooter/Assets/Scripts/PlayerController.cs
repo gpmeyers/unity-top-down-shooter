@@ -23,6 +23,9 @@ public class PlayerController : MonoBehaviour
     // Field Maintaining Player Position
     private bool isHome = true;
 
+    // Field Maintaining the Player's Cash
+    public int playerCash = 0;
+
     // Start is called before the first frame update
     void Start()
     {

@@ -4,12 +4,13 @@ using UnityEngine;
 
 public class ShopPopUp : MonoBehaviour
 {
-
+    // References to Game Objects to be used in script
     public Transform player;
 
     public GameObject shopPopUpUI;
 
-    private bool isActive = false;
+    // Static Field that represents if the player is in range of the shop
+    public static bool isActive = false;
 
     // Update is called once per frame
     void Update()

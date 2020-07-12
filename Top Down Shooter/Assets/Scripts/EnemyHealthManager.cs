@@ -27,6 +27,7 @@ public class EnemyHealthManager : MonoBehaviour
         {
             Destroy(gameObject);
             manager.EnemySpawn();
+            FindObjectOfType<PlayerCash>().AddCash();
         }
     }
 
