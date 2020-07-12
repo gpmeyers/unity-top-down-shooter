@@ -24,8 +24,6 @@ public class EnemySpawner : MonoBehaviour
     void Start()
     {
         enemyCount = 0;
-
-        StartCoroutine(EnemySpawnX());
     }
 
     // Corountine that spawns X enemies at the beginning of the game
@@ -58,6 +56,11 @@ public class EnemySpawner : MonoBehaviour
         }
     }
 
+    public void StartSpawn()
+    {
+        StartCoroutine(EnemySpawnX());
+    }
+
     // Function that spawns one enemy when an enemy is killed to endlessly spawn enemies
     // GameManager will have this function called upon an enemy death
     public void EnemySpawn()
@@ -81,5 +84,16 @@ public class EnemySpawner : MonoBehaviour
         {
             EnemySpawn();
         }
+    }
+
+    // Function will despawn the enemies when the player goes into the home area
+    public void DespawnEnemies()
+    {
+        foreach (GameObject enemy in GameObject.FindGameObjectsWithTag("Enemy"))
+        {
+            Destroy(enemy);
+        }
+
+        enemyCount = 0;
     }
 }

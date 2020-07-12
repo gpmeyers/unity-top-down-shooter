@@ -20,6 +20,9 @@ public class PlayerController : MonoBehaviour
 
     public GunController gun;
 
+    // Field Maintaining Player Position
+    private bool isHome = true;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -61,6 +64,18 @@ public class PlayerController : MonoBehaviour
         {
             gun.transLocFired = true;
             gun.FireTranslocator();
+        }
+
+        // Determining Player Position
+        if(!isHome && transform.position.z <= -25)
+        {
+            FindObjectOfType<EnemySpawner>().DespawnEnemies();
+            isHome = true;
+        }
+        if (isHome && transform.position.z >= -25)
+        {
+            FindObjectOfType<EnemySpawner>().StartSpawn();
+            isHome = false;
         }
     }
 
