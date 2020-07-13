@@ -55,7 +55,10 @@ public class PlayerController : MonoBehaviour
         // For player combat controls
         if (Input.GetMouseButtonDown(0))
         {
-            gun.isFiring = true;
+            if(Time.timeScale != 0)
+            {
+                gun.isFiring = true;
+            }
         }
         if (Input.GetMouseButtonUp(0))
         {
