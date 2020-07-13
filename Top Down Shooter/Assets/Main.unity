@@ -8471,7 +8471,6 @@ GameObject:
   - component: {fileID: 2059415525}
   - component: {fileID: 2059415524}
   - component: {fileID: 2059415523}
-  - component: {fileID: 2059415522}
   - component: {fileID: 2059415521}
   - component: {fileID: 2059415520}
   m_Layer: 5
@@ -8509,19 +8508,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 465395078}
   shopPopUpUI: {fileID: 519928383}
---- !u!114 &2059415522
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2059415519}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9161b2e0738cf8e4a8dd4b0740c47df0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pauseMenuUI: {fileID: 0}
 --- !u!114 &2059415523
 MonoBehaviour:
   m_ObjectHideFlags: 0
