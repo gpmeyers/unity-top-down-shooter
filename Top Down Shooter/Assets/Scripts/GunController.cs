@@ -11,6 +11,7 @@ public class GunController : MonoBehaviour
     // Fields that fold data regarding the bullet
     public BulletController bullet;
     public float bulletSpeed;
+    public float bulletDamage;
 
     // Fields that hold data regarding the type of gun (fire rate)
     public float fireRate; // Fire Rate here is measured in time between shots so lower = more bullets per second

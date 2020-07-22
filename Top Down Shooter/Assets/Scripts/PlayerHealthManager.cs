@@ -7,7 +7,7 @@ public class PlayerHealthManager : MonoBehaviour
 
     // Fields for the player's health
     public int health;
-    private int currentHealth;
+    public int currentHealth;
 
     // Fields for the length that the player will flash when receiving damage
     public float flashLength;

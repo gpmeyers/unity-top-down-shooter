@@ -26,6 +26,11 @@ public class PlayerController : MonoBehaviour
     // Field Maintaining the Player's Cash
     public int playerCash = 0;
 
+    // Fields Maintaining the Player's Ability Levels
+    public int fireRateLevel = 0;
+    public int damageLevel = 0;
+    public int healthLevel = 0;
+
     // Start is called before the first frame update
     void Start()
     {
