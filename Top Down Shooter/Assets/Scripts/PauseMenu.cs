@@ -43,17 +43,11 @@ public class PauseMenu : MonoBehaviour
         GameIsPaused = true;
     }
 
-    /*
-     *TODO: Need to change these depending on how I implement the store
-     * 
-     * If I implement the store from the Pause Menu, change the Menu button to pull up the store, and the quit button to exit to main menu
-     */
-
-    // Function to Load the Menu
+    // Function to Load the Main Menu
     public void LoadMenu()
     {
         Time.timeScale = 1f;
-        SceneManager.LoadScene("Menu");
+        SceneManager.LoadScene(0);
     }
 
     // Function to Quit to the Main Menu
