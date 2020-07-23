@@ -19,6 +19,9 @@ public class PlayerHealthManager : MonoBehaviour
     // Reference to Health Bar for UI support
     public HealthBar healthBar;
 
+    // Reference for Death Screen UI for player death
+    public GameObject deathScreenUI;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -35,6 +38,8 @@ public class PlayerHealthManager : MonoBehaviour
         // Logic to kill the player
         if(currentHealth <= 0)
         {
+            deathScreenUI.SetActive(true);
+
             gameObject.SetActive(false);
         }
 
