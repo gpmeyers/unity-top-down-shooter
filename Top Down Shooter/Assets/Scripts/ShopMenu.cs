@@ -36,9 +36,9 @@ public class ShopMenu : MonoBehaviour
     // Function to Purchase Ability: Fire Rate Level 1
     public void BuyFireRate1()
     {
-        if (player.playerCash >= 2500 && player.fireRateLevel < 1)
+        if (player.playerCash >= 2000 && player.fireRateLevel < 1)
         {
-            player.playerCash -= 2500;
+            player.playerCash -= 2000;
             player.fireRateLevel = 1;
         }
 
@@ -48,9 +48,9 @@ public class ShopMenu : MonoBehaviour
     // Function to Purchase Ability: Fire Rate Level 2
     public void BuyFireRate2()
     {
-        if (player.playerCash >= 10000 && player.fireRateLevel < 2)
+        if (player.playerCash >= 5000 && player.fireRateLevel < 2)
         {
-            player.playerCash -= 10000;
+            player.playerCash -= 5000;
             player.fireRateLevel = 2;
         }
 
@@ -60,9 +60,9 @@ public class ShopMenu : MonoBehaviour
     // Function to Purchase Ability: Fire Rate Level 3
     public void BuyFireRate3()
     {
-        if (player.playerCash >= 25000 && player.fireRateLevel < 3)
+        if (player.playerCash >= 10000 && player.fireRateLevel < 3)
         {
-            player.playerCash -= 25000;
+            player.playerCash -= 10000;
             player.fireRateLevel = 3;
         }
 
@@ -72,9 +72,9 @@ public class ShopMenu : MonoBehaviour
     // Function to Purchase Ability: Damage Level 1
     public void BuyDamage1()
     {
-        if (player.playerCash >= 2500 && player.damageLevel < 1)
+        if (player.playerCash >= 2000 && player.damageLevel < 1)
         {
-            player.playerCash -= 2500;
+            player.playerCash -= 2000;
             player.damageLevel = 1;
         }
 
@@ -84,9 +84,9 @@ public class ShopMenu : MonoBehaviour
     // Function to Purchase Ability: Damage Level 2
     public void BuyDamage2()
     {
-        if (player.playerCash >= 10000 && player.damageLevel < 2)
+        if (player.playerCash >= 5000 && player.damageLevel < 2)
         {
-            player.playerCash -= 10000;
+            player.playerCash -= 5000;
             player.damageLevel = 2;
         }
 
@@ -96,9 +96,9 @@ public class ShopMenu : MonoBehaviour
     // Function to Purchase Ability: Damage Level 3
     public void BuyDamage3()
     {
-        if (player.playerCash >= 25000 && player.damageLevel < 3)
+        if (player.playerCash >= 10000 && player.damageLevel < 3)
         {
-            player.playerCash -= 25000;
+            player.playerCash -= 10000;
             player.damageLevel = 3;
         }
 
@@ -108,9 +108,9 @@ public class ShopMenu : MonoBehaviour
     // Function to Purchase Ability: Health Level 1
     public void BuyHealth1()
     {
-        if (player.playerCash >= 2500 && player.healthLevel < 1)
+        if (player.playerCash >= 2000 && player.healthLevel < 1)
         {
-            player.playerCash -= 2500;
+            player.playerCash -= 2000;
             player.healthLevel = 1;
         }
 
@@ -123,9 +123,9 @@ public class ShopMenu : MonoBehaviour
     // Function to Purchase Ability: Health Level 2
     public void BuyHealth2()
     {
-        if (player.playerCash >= 10000 && player.healthLevel < 2)
+        if (player.playerCash >= 5000 && player.healthLevel < 2)
         {
-            player.playerCash -= 10000;
+            player.playerCash -= 5000;
             player.healthLevel = 2;
         }
 
@@ -138,9 +138,9 @@ public class ShopMenu : MonoBehaviour
     // Function to Purchase Ability: Health Level 3
     public void BuyHealth3()
     {
-        if (player.playerCash >= 25000 && player.healthLevel < 3)
+        if (player.playerCash >= 10000 && player.healthLevel < 3)
         {
-            player.playerCash -= 25000;
+            player.playerCash -= 10000;
             player.healthLevel = 3;
         }
 
