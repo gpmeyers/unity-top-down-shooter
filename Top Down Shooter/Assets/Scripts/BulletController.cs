@@ -36,5 +36,10 @@ public class BulletController : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        if(collision.gameObject.tag == "Boss")
+        {
+            collision.gameObject.GetComponent<BossHealthManager>().DamageEnemy(bulletDamage);
+            Destroy(gameObject);
+        }
     }
 }

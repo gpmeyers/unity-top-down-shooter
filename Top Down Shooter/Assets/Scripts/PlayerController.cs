@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Collections.Specialized;
 using UnityEngine;
@@ -30,6 +31,12 @@ public class PlayerController : MonoBehaviour
     public int fireRateLevel = 0;
     public int damageLevel = 0;
     public int healthLevel = 0;
+
+    // Reference to wall for final encounter
+    public GameObject wall;
+
+    // Check to see if boss is spawned
+    private Boolean bossSpawned = false;
 
     // Start is called before the first frame update
     void Start()
@@ -87,6 +94,22 @@ public class PlayerController : MonoBehaviour
         {
             FindObjectOfType<EnemySpawner>().StartSpawn();
             isHome = false;
+        }
+        if (!isHome && transform.position.z >= 25.5)
+        {
+            FindObjectOfType<EnemySpawner>().DespawnEnemies();
+            isHome = true;
+        }
+        if (isHome && transform.position.z <= -25.5)
+        {
+            FindObjectOfType<EnemySpawner>().StartSpawn();
+            isHome = false;
+        }
+        if(transform.position.z >= 61 && !bossSpawned)
+        {
+            FindObjectOfType<EnemySpawner>().BossEnemySpawn();
+            wall.SetActive(true);
+            bossSpawned = true;
         }
     }
 

@@ -9,6 +9,7 @@ public class EnemySpawner : MonoBehaviour
 
     // Reference to the Enemy Prefab we would like to spawn. (Can change to an array if I add more enemy types)
     public GameObject enemy;
+    public GameObject boss;
 
     // Reference to player object to determine if enemy spawn is too close
     public PlayerController player;
@@ -20,6 +21,9 @@ public class EnemySpawner : MonoBehaviour
     // Field that will contain the current number of enemies
     public int enemyCount;
 
+    // End Game UI
+    public GameObject endGameUI;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -29,7 +33,7 @@ public class EnemySpawner : MonoBehaviour
     // Corountine that spawns X enemies at the beginning of the game
     IEnumerator EnemySpawnX()
     {
-        while(enemyCount < 15) // Value given in statement is "X"
+        while(enemyCount < 22) // Value given in statement is "X"
         {
             // Get a Random position for the enemy to be spawned (x,z) (y is fixed to 1)
             xPos = UnityEngine.Random.Range(-23, 23);
@@ -95,5 +99,15 @@ public class EnemySpawner : MonoBehaviour
         }
 
         enemyCount = 0;
+    }
+
+    // Function will spawn the boss once the player walks into the final arena
+    public void BossEnemySpawn()
+    {
+        GameObject newBoss = Instantiate(boss, new Vector3(0, 4, 85), Quaternion.identity);
+        newBoss.GetComponent<BossController>().player = player;
+        newBoss.GetComponent<BossController>().manager = this;
+        newBoss.GetComponent<BossHealthManager>().endGameUI = endGameUI;
+        newBoss.GetComponent<BossHealthManager>().manager = this;
     }
 }
